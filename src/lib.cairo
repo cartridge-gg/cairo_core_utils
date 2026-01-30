@@ -1,5 +1,6 @@
 pub use cgg_collection::{
-    CollectionExtendFront, CollectionSplit, SnapForward, SnapForwardDeep, SnapForwardTo, ToSpan,
+    CollectionExtendFront, CollectionSplit, IsTuple, SnapForward, SnapForwardDeep, SnapForwardTo,
+    ToSpan,
 };
 
 pub use cgg_const_fns::{
