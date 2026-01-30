@@ -1,0 +1,52 @@
+[workspace.package]
+version = "0.1.2"
+edition = "2024_07"
+cairo-version = "2.13.1"
+scarb-version = "2.13.1"
+repository = "https://github.com/cartridge-gg/cairo_core_utils"
+name = "cgg_utils"
+
+
+[workspace]
+members = ["packages/collection", "packages/const_fns", "packages/snappable"]
+
+
+[workspace.dependencies]
+starknet = "2.13.1"
+snforge_std = "0.54.0"
+assert_macros = "2.13.1"
+cgg_snappable = { path = "packages/snappable" }
+cgg_collection = { path = "packages/collection" }
+cgg_const_fns = { path = "packages/const_fns" }
+
+[workspace.tool.fmt]
+sort-module-level-items = true
+
+[workspace.tool.scarb]
+allow-prebuilt-plugins = ["snforge_std"]
+
+[workspace.tool.snforge]
+
+[package]
+name = "cgg_utils"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+starknet.workspace = true
+cgg_collection.workspace = true
+cgg_const_fns.workspace = true
+cgg_snappable.workspace = true
+
+[dev-dependencies]
+snforge_std.workspace = true
+
+[scripts]
+test = "snforge test"
+
+[tool]
+fmt.workspace = true
+scarb.workspace = true
+snforge.workspace = true
+
+[lib]
