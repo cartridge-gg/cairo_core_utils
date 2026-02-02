@@ -1,6 +1,6 @@
 use cgg_collection::CollectionSplit;
-pub mod hades;
-pub use hades::{hades_permutation_const, hades_permutation_const_result};
+use crate::{hades_permutation_const, hades_permutation_const_result};
+
 
 const fn poseidon_update_state_with_pair(
     state: [felt252; 3], first: felt252, second: felt252,

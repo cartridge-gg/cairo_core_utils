@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cgg_const_fns"
+name = "cgg_poseidon"
 version = "0.1.2"
 dependencies = [
  "cgg_collection",
@@ -25,12 +25,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "cgg_test_utils"
+version = "0.1.2"
+dependencies = [
+ "cgg_collection",
+ "snforge_std",
+]
+
+[[package]]
 name = "cgg_utils"
 version = "0.1.2"
 dependencies = [
  "cgg_collection",
- "cgg_const_fns",
+ "cgg_poseidon",
  "cgg_snappable",
+ "cgg_test_utils",
  "snforge_std",
 ]
 

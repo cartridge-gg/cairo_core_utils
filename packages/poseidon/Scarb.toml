@@ -1,5 +1,5 @@
 [package]
-name = "cgg_const_fns"
+name = "cgg_poseidon"
 version.workspace = true
 edition.workspace = true
 cairo-version.workspace = true

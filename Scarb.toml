@@ -8,7 +8,12 @@ name = "cgg_utils"
 
 
 [workspace]
-members = ["packages/collection", "packages/const_fns", "packages/snappable"]
+members = [
+    "packages/collection",
+    "packages/poseidon",
+    "packages/snappable",
+    "packages/testing",
+]
 
 
 [workspace.dependencies]
@@ -17,7 +22,8 @@ snforge_std = "0.54.0"
 assert_macros = "2.13.1"
 cgg_snappable = { path = "packages/snappable" }
 cgg_collection = { path = "packages/collection" }
-cgg_const_fns = { path = "packages/const_fns" }
+cgg_poseidon = { path = "packages/poseidon" }
+cgg_test_utils = { path = "packages/testing" }
 
 [workspace.tool.fmt]
 sort-module-level-items = true
@@ -35,8 +41,9 @@ edition.workspace = true
 [dependencies]
 starknet.workspace = true
 cgg_collection.workspace = true
-cgg_const_fns.workspace = true
+cgg_poseidon.workspace = true
 cgg_snappable.workspace = true
+cgg_test_utils.workspace = true
 
 [dev-dependencies]
 snforge_std.workspace = true
