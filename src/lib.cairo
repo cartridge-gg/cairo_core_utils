@@ -4,8 +4,8 @@ pub use cgg_collection::{
 };
 
 pub use cgg_poseidon::{
-    poseidon_hash_const_single, poseidon_hash_const_three, poseidon_hash_const_two,
-    poseidon_hash_fixed_array,
+    PoseidonFixedArray, poseidon_hash_const_single, poseidon_hash_const_three,
+    poseidon_hash_const_two, poseidon_hash_fixed_array,
 };
 pub use cgg_snappable::{
     AsSnapshot, BaseType, EquivalentType, NestedSnapshot, Owned, SingleSnapshot, Snapshot,

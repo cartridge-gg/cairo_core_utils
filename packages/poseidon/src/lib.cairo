@@ -2,8 +2,8 @@ pub mod const_hades;
 pub mod consts;
 pub use const_hades::{hades_permutation_const, hades_permutation_const_result};
 pub use consts::{
-    poseidon_hash_const_single, poseidon_hash_const_three, poseidon_hash_const_two,
-    poseidon_hash_fixed_array,
+    PoseidonFixedArray, poseidon_hash_const_single, poseidon_hash_const_three,
+    poseidon_hash_const_two, poseidon_hash_fixed_array,
 };
 use core::poseidon::hades_permutation;
 
