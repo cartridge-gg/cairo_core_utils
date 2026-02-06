@@ -12,7 +12,6 @@ experimental-features = [
 ]
 
 [dependencies]
-starknet.workspace = true
 
 [dev-dependencies]
 snforge_std.workspace = true

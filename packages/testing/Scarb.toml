@@ -8,7 +8,6 @@ repository.workspace = true
 experimental-features = ["associated_item_constraints", "negative_impls"]
 
 [dependencies]
-starknet.workspace = true
 snforge_std.workspace = true
 assert_macros.workspace = true
 cgg_collection.workspace = true

@@ -17,7 +17,6 @@ members = [
 
 
 [workspace.dependencies]
-starknet = "2.13.1"
 snforge_std = "0.54.0"
 assert_macros = "2.13.1"
 cgg_snappable = { path = "packages/snappable" }
@@ -39,7 +38,6 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-starknet.workspace = true
 cgg_collection.workspace = true
 cgg_poseidon.workspace = true
 cgg_snappable.workspace = true
@@ -47,6 +45,7 @@ cgg_test_utils.workspace = true
 
 [dev-dependencies]
 snforge_std.workspace = true
+
 
 [scripts]
 test = "snforge test"

@@ -137,18 +137,5 @@ impl ToSnapshot3Impl<T, +Owned<T>> of ToSnapshotOf<@@@T, T> {
 //         SS::to_snapshot(*self)
 //     }
 // }
-// mod test_mod {
-//     use super::{ToSnapshotBase, ToSnapshotOf};
-//     fn test() {
-//         let a = ToSnapshotBase::to_snapshot(1);
-//         let b = ToSnapshotBase::to_snapshot(@1);
-//         let c = ToSnapshotBase::to_snapshot(@@1);
-//         let d = ToSnapshotBase::to_snapshot(@@@@@@1);
-//         let a = ToSnapshotOf::to_snapshot(1);
-//         let b = ToSnapshotOf::to_snapshot(@1);
-//         let c = ToSnapshotOf::to_snapshot(@@@@@@1);
-//         // let d = ToSnapshotOf::to_snapshot(@@@@@@1);
-//     }
-// }
 
 
