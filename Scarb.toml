@@ -1,5 +1,5 @@
 [workspace.package]
-version = "0.1.2"
+version = "0.1.1"
 edition = "2024_07"
 cairo-version = "2.13.1"
 scarb-version = "2.13.1"
@@ -17,7 +17,7 @@ members = [
 
 
 [workspace.dependencies]
-snforge_std = "0.54.0"
+snforge_std = "0.56.0"
 assert_macros = "2.13.1"
 cgg_snappable = { path = "packages/snappable" }
 cgg_collection = { path = "packages/collection" }
